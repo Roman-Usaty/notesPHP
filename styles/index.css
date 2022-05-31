@@ -1,0 +1,90 @@
+.group-button {
+    width: 160px;
+}
+.group-button.profile {
+    width: 260px;
+}
+
+.logo > p {
+    font-size: 2rem;
+}
+
+.group-button > button {
+    height: min-content;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+  
+.card {
+    margin: 20px;
+    padding: 20px;
+    max-width: 500px;
+    min-width: 225px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr;
+    border-radius: 10px;
+    box-shadow: 5px 10px 25px rgb(0 0 0 / 30%);
+    transition: all 0.2s;
+    background: radial-gradient(#fade84, #f7bf28);
+}
+  
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+  
+.card__exit,
+.card__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+}
+  
+.card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+}
+  
+.card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+}
+  
+.card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #000000;
+}
+.exit__close {
+    color: inherit;
+}
+.exit__close:hover {
+    font-size: 20px;
+    cursor: pointer;
+    color: inherit;
+}
+.exit__close:active {
+    color: red;
+}
+
+
+.signUpFormError {
+    border: 1px solid red;
+    padding: 10px;
+    color: red;
+}
+.signUpFormError > p {
+    margin: 0;
+}
+
+
+@media (max-width: 1600px) {
+    .cards {
+      justify-content: center;
+    }
+  }
